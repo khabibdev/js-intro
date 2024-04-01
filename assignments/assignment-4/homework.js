@@ -18,3 +18,15 @@ let interest = (principal * rate * time) / 100;
 
 // Log the interest to the console
 console.log("Simple Interest:", interest);
+
+let a = 5;
+let b = 10;
+
+// Swap values without using a third variable
+a = a + b;
+b = a - b;
+a = a - b;
+
+// Log the swapped values
+console.log("a:", a);
+console.log("b:", b);
