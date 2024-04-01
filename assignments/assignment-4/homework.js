@@ -51,3 +51,12 @@ console.log("Radians:", radians);
 let circleRadius = 7;
 let circlePerimeter = 2 * Math.PI * circleRadius;
 console.log("Perimeter of the circle:", circlePerimeter);
+
+// Declare variable for speed in miles per hour
+let milesPerHour = 60;
+
+// Convert miles per hour to kilometers per hour
+let kilometersPerHour = milesPerHour * 1.60934;
+
+// Log the result
+console.log("Speed in kilometers per hour:", kilometersPerHour);
