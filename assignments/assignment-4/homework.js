@@ -69,3 +69,15 @@ let gallons = liters * 0.264172;
 
 // Log the result in gallons to the console
 console.log("Volume in gallons:", gallons);
+
+// Declare variables
+let p = 1000; // Principal amount
+let annualRate = 0.05; // Annual interest rate (5%)
+let years = 5; // Time in years
+let n = 4; // Number of times interest is compounded per year
+
+// Calculate compound interest
+let totalAmount = p * Math.pow(1 + annualRate / n, n * years);
+
+// Log the total amount after interest to the console
+console.log("Total amount after compound interest:", totalAmount);
