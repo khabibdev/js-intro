@@ -7,3 +7,14 @@ console.log("Temperature in Celsius:", celsius);
 let celsiusTemp = 24;
 let fahrenheitTemp = celsiusTemp * (9 / 5) + 32;
 console.log("Temperature in Fahrenheit:", fahrenheitTemp);
+
+// Declare variables
+let principal = 1000; // in dollars
+let rate = 5; // in percent
+let time = 2; // in years
+
+// Compute simple interest
+let interest = (principal * rate * time) / 100;
+
+// Log the interest to the console
+console.log("Simple Interest:", interest);
