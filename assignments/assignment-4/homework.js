@@ -60,3 +60,12 @@ let kilometersPerHour = milesPerHour * 1.60934;
 
 // Log the result
 console.log("Speed in kilometers per hour:", kilometersPerHour);
+
+// Assign volume in liters to a variable
+let liters = 10;
+
+// Convert volume to gallons
+let gallons = liters * 0.264172;
+
+// Log the result in gallons to the console
+console.log("Volume in gallons:", gallons);
