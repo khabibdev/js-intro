@@ -45,7 +45,6 @@ var result = num1 + num2 - total;
 
 console.log(result);
 
-
 var part1 = "The greatest glory in";
 var part2 = "living lies not in";
 var part3 = "never falling, but in";
@@ -54,16 +53,16 @@ var part5 = "we fall.";
 var author = "- Nelson Mandela";
 
 // First, use the template literal method.
-console.log(${part1} ${part2} ${part3} ${part4} ${part5} ${author});
+console.log(`${part1} ${part2} ${part3} ${part4} ${part5} ${author}`);
 
 // Second, use the .concat() method.
-console.log(part1.concat(" ",part2, " ",part3," ",part4," ",part5," ",author));
+console.log(part1.concat(" ", part2, " ", part3, " ", part4, " ", part5, " ", author));
 
 // Third, use the + operator.
 console.log(part1 + " " + part2 + " " + part3 + " " + part4 + " " + part5 + " " + author);
 
 // Fourth, use the += operator.
-console.log(part1 += " ",part2 += " ",part3 += " ",part4 += " ",part5 += " ",author);
+console.log((part1 += " "), (part2 += " "), (part3 += " "), (part4 += " "), (part5 += " "), author);
 
 var firstName = "John";
 var age = 30;
@@ -76,4 +75,6 @@ var favoriteColor = "blue";
 var dreamTravelDestination = "Tokyo";
 var favoriteSeason = "autumn";
 
-console.log(Hello, my name is ${firstName} and I am ${age} years old. I live in ${cityOfResidence}, where I work as a ${profession}. In my free time, I enjoy ${hobby1} and ${hobby2}. My favorite food is ${favoriteFood} and my favorite color is ${favoriteColor}. My dream is to one day visit ${dreamTravelDestination}. My favorite season of the year is ${favoriteSeason} because of the beautiful changing colors of the leaves.);
+console.log(
+    "Hello, my name is ${firstName} and I am ${age} years old. I live in ${cityOfResidence}, where I work as a ${profession}. In my free time, I enjoy ${hobby1} and ${hobby2}. My favorite food is ${favoriteFood} and my favorite color is ${favoriteColor}. My dream is to one day visit ${dreamTravelDestination}. My favorite season of the year is ${favoriteSeason} because of the beautiful changing colors of the leaves."
+);
