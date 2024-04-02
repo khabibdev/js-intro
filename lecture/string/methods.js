@@ -41,3 +41,26 @@ console.log(animal.toLocaleLowerCase());
 
 var anotherAnimal = "elephant";
 console.log(anotherAnimal.toLocaleUpperCase());
+
+//9. relace();
+
+var address = "2365 E 13th street, Brooklyn, NY";
+var newAddress = address.replace("Brooklyn", "Queens");
+console.log(newAddress);
+console.log(address);
+
+var paragraph = `I live in at ${address}. I love Brooklyn`;
+// var newParagraph = paragraph.replace("Brooklyn", "Queens");
+// console.log(newParagraph);
+
+var newParagraph = paragraph.replaceAll("Brooklyn", "Queens");
+console.log(newParagraph);
+
+// 10. slice();
+var lastName = "Smith";
+var newLastName = lastName.slice(0, 4);
+console.log(newLastName);
+
+var helloWorld = "Hello, World";
+// var newHelloWorld = newHelloWorld.slice(1);
+// console.log(newHelloWorld);
