@@ -42,3 +42,12 @@ console.log("--------------------");
 
 var feedback = "This product is good!";
 console.log(feedback.replace("good", "excellent"));
+
+console.log("--------------------");
+
+var shout = "can you hear me?";
+console.log(shout.toUpperCase());
+var str = "PLEASE LOWER YOUR VOICE";
+console.log(str.toLowerCase());
+
+console.log("--------------------");
