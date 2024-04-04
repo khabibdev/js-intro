@@ -51,3 +51,12 @@ var str = "PLEASE LOWER YOUR VOICE";
 console.log(str.toLowerCase());
 
 console.log("--------------------");
+
+var str = " JavaScript is awesome! ";
+console.log(str.trim());
+
+var str = " JavaScript is awesome! ";
+console.log(str.trimStart());
+
+var str = " JavaScript is awesome! ";
+console.log(str.trimEnd());
