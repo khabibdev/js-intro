@@ -1,12 +1,12 @@
-var result1 = "hello".includes("e").toUpperCase();
+var result1 = "hello".includes("e").toUpperCase(); //Result TRUE
 
-var result2 = "world".indexOf("o").concat("cean");
+var result2 = "world".indexOf("o").concat("cean"); //falce 1cean
 
-var result3 = "goodbye".endsWith("e").replace("e", "a");
+var result3 = "goodbye".endsWith("e").replace("e", "a"); //true goodbya
 
-var result4 = "example".slice(0, 3).indexOf("a");
+var result4 = "example".slice(0, 3).indexOf("a"); //falce
 
-var result5 = "space".trimStart().trimEnd().toUpperCase().slice(-1).toLowerCase();
+var result5 = "space".trimStart().trimEnd().toUpperCase().slice(-1).toLowerCase(); //falce
 
 var result6 = "boolean".startsWith("b").toString().replace("true", "yes");
 
