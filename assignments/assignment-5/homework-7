@@ -24,3 +24,6 @@ var welcomeMessage = greeting.concat(" " + text);
 console.log(welcomeMessage);
 
 console.log("--------------------");
+
+var announcement = "Today's event starts at 3 PM!";
+console.log(announcement.endsWith("PM!")); // true
