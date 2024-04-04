@@ -1,0 +1,18 @@
+var post1 = "Hello, World!";
+var post2 = "I`m a Software Engineer ";
+var comparisonResult = post1.length <= post2.length;
+console.log(comparisonResult); // true
+
+var comparisonResult = post1.length >= post2.length;
+console.log(comparisonResult); // false
+
+console.log("--------------------");
+
+var greeting = "Hello Master Shifu";
+console.log(greeting[0]);
+console.log(greeting[1]);
+console.log(greeting[2]);
+console.log(greeting[greeting.length - 1]);
+console.log(greeting[greeting.length - 2]);
+
+console.log("--------------------");
