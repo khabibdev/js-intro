@@ -39,3 +39,6 @@ var javaScript = "Repeat after me: JavaScript is fun!";
 console.log(javaScript.indexOf("JavaScript"));
 
 console.log("--------------------");
+
+var feedback = "This product is good!";
+console.log(feedback.replace("good", "excellent"));
