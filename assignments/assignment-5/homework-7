@@ -8,11 +8,19 @@ console.log(comparisonResult); // false
 
 console.log("--------------------");
 
-var greeting = "Hello Master Shifu";
+var greeting = "Hello, Master Shifu!";
 console.log(greeting[0]);
 console.log(greeting[1]);
 console.log(greeting[2]);
 console.log(greeting[greeting.length - 1]);
 console.log(greeting[greeting.length - 2]);
+
+console.log("--------------------");
+
+var greeting = "Good";
+var text = "Morning";
+
+var welcomeMessage = greeting.concat(" " + text);
+console.log(welcomeMessage);
 
 console.log("--------------------");
