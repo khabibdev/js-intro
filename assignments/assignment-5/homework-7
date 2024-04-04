@@ -34,3 +34,8 @@ var gems = "Looking for the hidden gems in the city.";
 console.log(gems.includes("hidden")); // true
 
 console.log("--------------------");
+
+var javaScript = "Repeat after me: JavaScript is fun!";
+console.log(javaScript.indexOf("JavaScript"));
+
+console.log("--------------------");
