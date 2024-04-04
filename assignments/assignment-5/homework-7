@@ -60,3 +60,9 @@ console.log(str.trimStart());
 
 var str = " JavaScript is awesome! ";
 console.log(str.trimEnd());
+
+console.log("--------------------");
+
+var word = "Hello, world!";
+console.log(word.slice(0, 5));
+console.log(word.slice(7));
