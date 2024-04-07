@@ -2,6 +2,8 @@ var removeSpace = "I Love JavaScript";
 var newRemoveSpace = removeSpace.replaceAll(" ", "");
 console.log(newRemoveSpace);
 
+console.log("-----------------");
+
 var javascript = "javascript";
 javascript = javascript
     .slice(+10)
@@ -11,9 +13,10 @@ console.log(javascript);
 
 console.log("-----------------");
 
-var fullName = "John Doe";
-var initial = fullName[0].concat(fullName[5]);
-console.log(initial);
+var firstNames = "Safarali";
+var lastNames = "Ramazonov";
+var fullNames = firstNames[0].concat(lastNames[0]);
+console.log(fullNames);
 
 console.log("-----------------");
 
@@ -22,6 +25,7 @@ var alphabetWithoutMyNameFirstCharacter = alphabet.replace("h", "");
 console.log(alphabetWithoutMyNameFirstCharacter);
 
 console.log("-----------------");
+
 var completeSentence = "The quick brown fox jumps over the lazy dog.";
 var randomChar = "o";
 randomChar = completeSentence.indexOf(randomChar);
