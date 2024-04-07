@@ -32,8 +32,8 @@ console.log(missingRandomCharString);
 
 console.log("-----------------");
 
-var randomString = "Aladdin";
-var randomChart = "a";
-var count = randomString.split(randomChart).lenth - 1;
-console.log(`The character "${randomChart}" appears ${count} times in the string.`);
-console.log("-----------------");
+var randomString = "Master Shifu is a great teacher!";
+var randomChar = "a";
+randomChar = randomString.replaceAll(randomChar, "");
+randomString = randomString.length - randomChar.length;
+console.log(randomString);
