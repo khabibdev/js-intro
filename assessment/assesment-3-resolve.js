@@ -31,3 +31,9 @@ var missingRandomCharString = completeSentence
 console.log(missingRandomCharString);
 
 console.log("-----------------");
+
+var randomString = "Aladdin";
+var randomChart = "a";
+var count = randomString.split(randomChart).lenth - 1;
+console.log(`The character "${randomChart}" appears ${count} times in the string.`);
+console.log("-----------------");
