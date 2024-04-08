@@ -65,7 +65,7 @@ var ex22 = -6543.5;
 console.log(Math.round(-6543.5)); //-6543 because its in the middle
 
 var ex23 = -5432.1;
-console.log(Math.ceil(-5432.1)); //-5432
+console.log(Math.ceil(-5432.1)); //-5432 it takes away all other numbers after .
 
 var ex24 = -4321.9;
 console.log(Math.floor(-4321.9)); //-4322 bugger number
