@@ -5,23 +5,31 @@ console.log(newRemoveSpace);
 console.log("-----------------");
 
 var javascript = "javascript";
-javascript = javascript
-    .slice(+10)
-    .concat("J", javascript.slice(+1, +4))
-    .concat("S", javascript.slice(+5));
+var firstSIdx = javascript.indexOf("s");
+var part1 = javascript[0].toUpperCase();
+var part2 = javascript.slice(1, firstSIdx);
+var part3 = javascript[firstSIdx].toUpperCase();
+var part4 = javascript.slice(firstSIdx + 1);
+javascript = part1 + part2 + part3 + part4;
 console.log(javascript);
 
 console.log("-----------------");
 
-var firstNames = "Safarali";
-var lastNames = "Ramazonov";
-var fullNames = firstNames[0].concat(lastNames[0]);
-console.log(fullNames);
+var fullName1 = "Safarali Ramazonov";
+
+var firstNameInitial = fullName1[0];
+var spaceIdx = fullName1.indexOf(" ");
+var lastNameUnitial = fullName1[spaceIdx + 1];
+var initial = firstNameInitial + lastNameUnitial;
+console.log(initial);
 
 console.log("-----------------");
 
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var alphabetWithoutMyNameFirstCharacter = alphabet.replace("h", "");
+var nameFirstLetter = "h";
+var nameFirstLetterIdx = alphabet.indexOf(nameFirstLetter);
+var alphabetWithoutMyNameFirstCharacter =
+    alphabet.slice(0, nameFirstLetterIdx) + alphabet.slice(nameFirstLetterIdx + 1);
 console.log(alphabetWithoutMyNameFirstCharacter);
 
 console.log("-----------------");
