@@ -1,68 +1,58 @@
-var post1 = "Hello, World!";
-var post2 = "I`m a Software Engineer ";
-var comparisonResult = post1.length <= post2.length;
-console.log(comparisonResult); // true
-
-var comparisonResult = post1.length >= post2.length;
-console.log(comparisonResult); // false
+var greeting = "Hello, world!";
+console.log(greeting[0]); // First character: 'H'
+console.log(greeting[1]); // Second character: 'e'
+console.log(greeting[2]); // Third character: 'l'
 
 console.log("--------------------");
 
-var greeting = "Hello, Master Shifu!";
-console.log(greeting[0]);
-console.log(greeting[1]);
-console.log(greeting[2]);
 console.log(greeting[greeting.length - 1]);
 console.log(greeting[greeting.length - 2]);
 
 console.log("--------------------");
 
-var greeting = "Good";
-var text = "Morning";
-
-var welcomeMessage = greeting.concat(" " + text);
-console.log(welcomeMessage);
+var greeting = "Hello, ";
+var name = "Alice";
+var welcomeMessage = greeting.concat(name);
+console.log(welcomeMessage); // Logs "Hello, Alice"
 
 console.log("--------------------");
 
 var announcement = "Today's event starts at 3 PM!";
-console.log(announcement.endsWith("PM!")); // true
-
+var endsWithPM = announcement.endsWith("PM!");
+console.log(endsWithPM); // Logs true
 console.log("--------------------");
 
-var gems = "Looking for the hidden gems in the city.";
-console.log(gems.includes("hidden")); // true
-
+var sentence = "Looking for the hidden gems in the city.";
+var containsHidden = sentence.includes("hidden");
+console.log(containsHidden); // Logs true
 console.log("--------------------");
 
-var javaScript = "Repeat after me: JavaScript is fun!";
-console.log(javaScript.indexOf("JavaScript"));
+var phrase = "Repeat after me: JavaScript is fun!";
+var position = phrase.indexOf("JavaScript");
+console.log(position); // Logs the starting index of "JavaScript"
 
 console.log("--------------------");
 
 var feedback = "This product is good!";
-console.log(feedback.replace("good", "excellent"));
-
+var updatedFeedback = feedback.replace("good", "excellent");
+console.log(updatedFeedback); // Logs "This product is excellent!"
 console.log("--------------------");
 
 var shout = "can you hear me?";
-console.log(shout.toUpperCase());
-var str = "PLEASE LOWER YOUR VOICE";
-console.log(str.toLowerCase());
+console.log(shout.toUpperCase()); // Converts to uppercase
 
+var loud = "PLEASE LOWER YOUR VOICE";
+console.log(loud.toLowerCase()); // Converts to lowercase
 console.log("--------------------");
 
-var str = " JavaScript is awesome! ";
-console.log(str.trim());
-
-var str = " JavaScript is awesome! ";
-console.log(str.trimStart());
-
-var str = " JavaScript is awesome! ";
-console.log(str.trimEnd());
+var spaceyString = " JavaScript is awesome! ";
+console.log(spaceyString.trim()); // Removes spaces from both ends
+console.log(spaceyString.trimStart()); // Removes spaces from the start
+console.log(spaceyString.trimEnd()); // Removes spaces from the end
 
 console.log("--------------------");
-
-var word = "Hello, world!";
-console.log(word.slice(0, 5));
-console.log(word.slice(7));
+var greeting = "Hello, world!";
+var hello = greeting.slice(0, 5);
+var world = greeting.slice(7);
+console.log(hello); // Logs "Hello"
+console.log(world); // Logs "world!"
