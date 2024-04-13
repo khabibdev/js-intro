@@ -87,3 +87,4 @@ console.log(Math.ceil(10000)); //10000 because there is no any extra numbers
 
 var ex30 = 10000;
 console.log(Math.floor(10000)); //10000 because there is no any extra numbers
+//Please check my homework
