@@ -6,3 +6,12 @@ if (password === correctPassword) {
 } else {
     console.log("Access Denied");
 }
+
+// ----   2   ---- //
+
+var userName = "strong";
+if (userName.length >= 5) {
+    console.log("Username is valid");
+} else {
+    console.log("Username must be at least 5 characters");
+}
