@@ -20,9 +20,27 @@
 var string1 = "examplestringonegenerated";
 var string2 = "secondexamplestringgenerated";
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
-var letterIndex = Math.floor(Math.random() * 26);
-
-console.log(letterIndex);
+var letterIndex1 = Math.floor(Math.random() * alphabet.length);
+var letterIndex2 = Math.floor(Math.random() * alphabet.length);
+var string1a = string1[letterIndex1];
+var string2a = string2[letterIndex2];
+var count1 = string1.split(string1a).length - 1;
+var count2 = string2.split(string2a).length - 1;
+console.log(string1a);
+console.log(string2a);
+console.log(count1);
+console.log(count2);
+if (count1 === count2) {
+    console.log("Number of" + " " + string1a + " " + "is the same in both strings");
+} else if (count1 > count2) {
+    console.log(
+        "Number of" + " " + string1a + " " + "in the first string is greater than the second one."
+    );
+} else if (count2 > count1) {
+    console.log("The second one is greater.");
+} else if (((count1 = 0), (count2 = 0))) {
+    console.log("Character does not exist in each string");
+}
 
 // ------ 3 ------ //
 
