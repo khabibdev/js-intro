@@ -60,36 +60,37 @@ function min(num1, num2, num3) {
 // min(-1, -5, 3);
 
 // ---- 4 ---- //
-function longestString(str1, str2, str3) {
-    var lenght1 = str1.lenght;
-    var lenght2 = str2.lenght;
-    var lenght3 = str3.lenght;
 
-    if (lenght2 > lenght1) {
-        console.log(str2);
-    } else if (lenght3 > lenght1) {
-        console.log(str3);
+function longestString(string1, string2, string3) {
+    if (
+        string1.length === string2.length &&
+        string1.length === string3.length &&
+        string2.length === string3.length
+    ) {
+        return string1 + string2 + string3;
+    } else if (string1.length > string2.length && string1.length > string3) {
+        return string1;
+    } else if (string2.length > string1.length && string2.length > string3) {
+        return string2;
     } else {
-        console.log(lenght1);
+        return string3;
     }
 }
 
-// longestString("hello", "world", "spaces here");
-
-// longestString("short", "medium length", "longest one here");
-// longestString("one", "two", "three");
-
 // ---- 5 ---- //
-function shortString(str1, str2, str3) {
-    var lenght1 = str1.lenght;
-    var lenght2 = str2.lenght;
-    var lenght3 = str3.lenght;
 
-    if (lenght2 > lenght1) {
-        console.log(str2);
-    } else if (lenght3 > lenght1) {
-        console.log(str3);
+function longestString(string1, string2, string3) {
+    if (
+        string1.length === string2.length &&
+        string1.length === string3.length &&
+        string2.length === string3.length
+    ) {
+        return string1 + string2 + string3;
+    } else if (string1.length < string2.length && string1.length < string3) {
+        return string1;
+    } else if (string2.length < string1.length && string2.length < string3) {
+        return string2;
     } else {
-        console.log(lenght1);
+        return string3;
     }
 }
