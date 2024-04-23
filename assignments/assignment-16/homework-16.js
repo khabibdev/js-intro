@@ -122,28 +122,6 @@ function convertToFahrenheit(number) {
 }
 
 //------ 12 ------/;
-function addOrdinalSuffix(num) {
-    if (num >= 11 && num <= 13) {
-        return num + "th";
-    }
-
-    switch (num % 10) {
-        case 1:
-            return num + "st";
-        case 2:
-            return num + "nd";
-        case 3:
-            return num + "rd";
-        default:
-            return num + "th";
-    }
-}
-
-// Test cases
-// console.log(addOrdinalSuffix(1)); // Outputs: "1st"
-// console.log(addOrdinalSuffix(22)); // Outputs: "22nd"
-// console.log(addOrdinalSuffix(43)); // Outputs: "43rd"
-// console.log(addOrdinalSuffix(104)); // Outputs: "104th"
 
 //------ 13 ------/;
 
