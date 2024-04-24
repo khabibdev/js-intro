@@ -123,6 +123,19 @@ function convertToFahrenheit(number) {
 
 //------ 12 ------/;
 
+function addOrdinalSuffix(number) {
+    var numberToString = number.toString();
+    if (number % 10 === 1) {
+        return numberToString + "st";
+    } else if (number % 10 === 2) {
+        return numberToString + "nd";
+    } else if (number % 10 === 3) {
+        return numberToString + "rd";
+    } else {
+        return numberToString + "th";
+    }
+}
+
 //------ 13 ------/;
 
 function addTimeSuffix(hour) {
@@ -142,9 +155,14 @@ function addTimeSuffix(hour) {
 // console.log(addTimeSuffix(12)); // Outputs: "12PM"
 //------ 14 ------/;
 
-function formatAsPhone(num) {
-    return num.toString() + "";
+function formatAsPhone(number) {
+    var numberToString = number.toString();
+    var first3Number = numberToString.slice(0, 3);
+    var second3Number = numberToString.slice(3, 6);
+    var last4Number = numberToString.slice(6);
+    return `(${first3Number}) ${second3Number}-${last4Number}`;
 }
+
 // console.log(formatAsPhone(1234567890)); // Outputs: "(123) 456-7890"
 // console.log(formatAsPhone(9876543210)); // Outputs: "(987) 654-3210"
 
