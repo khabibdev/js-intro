@@ -1,33 +1,28 @@
 // ---- 1 ---- //
-
 function countDivisibleByThreeOrFive(n) {
-    var count = 0;
-    for (var i = 1; i <= n; i++) {
-        if ((i % 3 === 0 || i % 5 === 0) && !(i % 3 === 0 && i % 5 === 0)) {
-            count++;
-        }
+    var divisibleNum = 0;
+    for (var i = 1; i < n; i++) {
+        if (i % 3 === 0 && i % 5 !== 0) divisibleNum += 1;
+        else if (i % 5 === 0 && i % 3 !== 0) divisibleNum += 1;
     }
-    return count;
+    return divisibleNum;
 }
-
 // console.log(countDivisibleByThreeOrFive(15));
 // console.log(countDivisibleByThreeOrFive(10));
 // console.log(countDivisibleByThreeOrFive(30));
 
 // ---- 2 ---- //
-
 function sumUpToBoth(num1, num2) {
-    function sumUpTo(num) {
-        var sum = 0;
-        for (var i = 1; i <= num; i++) {
-            sum += i;
-        }
-        return sum;
+    var sumUpNum1 = 0;
+    for (var i = 1; i <= num1; i++) {
+        sumUpNum1 += i;
     }
-
-    return sumUpTo(num1) + sumUpTo(num2);
+    var sumUpNum2 = 0;
+    for (var i = 1; i <= num2; i++) {
+        sumUpNum2 += i;
+    }
+    return sumUpNum1 + sumUpNum2;
 }
-
 // console.log(sumUpToBoth(5, 7));
 // console.log(sumUpToBoth(3, 4));
 // console.log(sumUpToBoth(6, 3));
@@ -36,7 +31,7 @@ function sumUpToBoth(num1, num2) {
 
 function sumOfSquares(n) {
     var sum = 0;
-    for (let i = 1; i <= n; i++) {
+    for (var i = 1; i <= n; i++) {
         sum += i * i;
     }
     return sum;
@@ -49,15 +44,15 @@ function sumOfSquares(n) {
 // ---- 4 ---- //
 
 function countPerfectSquares(num1, num2) {
-    var count = 0;
-
-    for (var i = num1; i <= num2; i++) {
-        if (isPerfectSquare(i)) {
-            count++;
+    var minNum = num1;
+    if (num2 < minNum) minNum = num2;
+    var maxNum = num1;
+    if (num2 > maxNum) maxNum = num2;
+    for (var i = minNum; i <= maxNum; i++) {
+        if (Math.sqrt(i) % 1 === 0) {
+            return i;
         }
     }
-
-    return count;
 }
 // console.log(countPerfectSquares(1, 25)); // Outputs: 5 (1, 4, 9, 16, 25)
 // console.log(countPerfectSquares(9, 49)); // Outputs: 5 (9, 16, 25, 36, 49)
