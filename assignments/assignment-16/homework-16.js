@@ -1,23 +1,29 @@
 //------ 1 ------/;
 
-function sumStrings(stringInt1, stringInt2) {
-    return (sums = parseInt(stringInt1) + parseInt(stringInt2));
+function sumStrings(str1, str2) {
+    var resultNum = parseFloat(str1) + parseFloat(str2);
+    return resultNum;
 }
 // console.log(sumStrings("123", "456"));
 // console.log(sumStrings("101", "899"));
 // console.log(sumStrings("333", "666"));
 
 //------ 2 ------/;
-
-function sumDigits(stringInt) {
-    var sums =
-        parseInt(stringInt[0]) +
-        parseInt(stringInt[1]) +
-        parseInt(stringInt[2]) +
-        parseInt(stringInt[3]);
-    if (stringInt.length === 4) {
-        return sums;
+function sumDigits(strIntiger) {
+    var sum = 0;
+    if (strIntiger[0] !== 0) {
+        sum += parseFloat(strIntiger[0]);
     }
+    if (strIntiger[1] !== 0) {
+        sum += parseFloat(strIntiger[1]);
+    }
+    if (strIntiger[2] !== 0) {
+        sum += parseFloat(strIntiger[2]);
+    }
+    if (strIntiger[3] !== 0) {
+        sum += parseFloat(strIntiger[3]);
+    }
+    return sum;
 }
 // console.log(sumDigits("1234"));
 // console.log(sumDigits("9009"));
@@ -50,14 +56,17 @@ function multiplyHalves(stringInt) {
 
 //------ 5 ------/;
 
-function isOddStringInteger(stringInt) {
-    var number = parseInt(stringInt);
-    console.log(number % 2 !== 0);
+function isOddStringInteger(strIntiger) {
+    var convertStrToNum = parseFloat(strIntiger);
+    if (convertStrToNum % 2 === 1) return true;
+    else {
+        return false;
+    }
 }
 
-// isOddStringInteger("123"); // Outputs: true
-// isOddStringInteger("2468"); // Outputs: false
-// isOddStringInteger("1357"); // Outputs: true
+console.log(isOddStringInteger("123")); // Outputs: true
+console.log(isOddStringInteger("2468")); // Outputs: false
+console.log(isOddStringInteger("1357")); // Outputs: true
 
 //------ 6 ------/;
 
